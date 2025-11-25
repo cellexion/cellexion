@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cellexion | ガラスフィルム公式サイト</title>
   <meta name="description" content="Cellexion（セレクション）は、貼り付けサポートと安心保証にこだわったスマホ用ガラスフィルムブランドです。">
+
+  <!-- ここを追加：サイトアイコン -->
+  <link rel="icon" type="image/png" href="./cellexion-logo.png">
+  <link rel="apple-touch-icon" href="./cellexion-logo.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">Cellexion</div>
+      <!-- ここをテキストからロゴ画像に変更 -->
+      <div class="logo">
+        <img src="./cellexion.png" alt="Cellexion" class="logo-img">
+      </div>
       <nav class="nav">
         <a href="#product">製品</a>
         <a href="#features">特徴</a>
@@ -43,11 +51,15 @@
             </a>
           </div>
         </div>
+
+        <!-- ここをモックからロゴカード表示に変更 -->
         <div class="hero-image">
-          <!-- シンプルな疑似モック。後で商品画像に差し替え可 -->
-          <div class="phone-mock">
-            <div class="phone-screen"></div>
-            <div class="phone-glass">Glass Film</div>
+          <div class="hero-card">
+            <img
+              src="./cellexion.png"
+              alt="Cellexion ブランドロゴ"
+              class="hero-logo"
+            >
           </div>
         </div>
       </div>

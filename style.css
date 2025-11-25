@@ -68,11 +68,18 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;          /* ロゴ同士の距離：ここで調整（例: 4〜10px） */
 }
 
-.logo-mark,
+.logo-mark {
+  height: 28px;      /* アイコンの高さ：ここで調整（例: 24〜32px） */
+  width: auto;
+  display: block;
+}
+
 .logo-wordmark {
+  height: 20px;      /* 文字ロゴの高さ：ここで調整（例: 18〜24px） */
+  width: auto;
   display: block;
 }
 

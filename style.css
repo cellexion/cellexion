@@ -71,19 +71,12 @@ body {
   gap: 10px;
 }
 
-.logo-mark {
-  height: 400px;   /* マークを大きめに */
-  width: auto;
-  display: block;
-  border-radius: 8px;
-}
-
+.logo-mark,
 .logo-wordmark {
-  height: 400px;   /* テキストロゴも拡大 */
-  width: auto;
   display: block;
 }
 
+/* ナビ */
 .nav a {
   margin-left: 16px;
   font-size: 0.9rem;

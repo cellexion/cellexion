@@ -69,6 +69,8 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;          /* ロゴ同士の距離：ここで調整（例: 4〜10px） */
+  height: 32px;        /* ロゴの見せたい高さ */
+  overflow: hidden;    /* はみ出した上下を隠す */
 }
 
 .logo-mark {

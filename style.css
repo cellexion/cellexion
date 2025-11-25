@@ -78,7 +78,7 @@ body {
 }
 
 .logo-wordmark {
-  height: 20px;      /* 文字ロゴの高さ：ここで調整（例: 18〜24px） */
+  height: 600px;      /* 文字ロゴの高さ：ここで調整（例: 18〜24px） */
   width: auto;
   display: block;
 }

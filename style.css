@@ -64,14 +64,22 @@ body {
   padding: 12px 0;
 }
 
-/* ここをロゴ画像用に変更 */
+/* ロゴ（マーク+テキスト） */
 .logo {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
-.logo-img {
-  height: 26px;         /* ロゴの縦サイズ。大きければここを調整 */
+.logo-mark {
+  height: 28px;   /* ロゴマークの高さ */
+  width: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.logo-wordmark {
+  height: 22px;   /* テキストロゴの高さ */
   width: auto;
   display: block;
 }
@@ -152,7 +160,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* HERO 右側：ロゴカード表示用 */
+/* HERO 右側：ロゴマークカード */
 .hero-image {
   display: flex;
   justify-content: center;
@@ -162,19 +170,18 @@ body {
 .hero-card {
   padding: 20px 24px;
   border-radius: 24px;
-  background: #ffffff;
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
-  border: 1px solid #e5e7eb;
+  background: #111827;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.6);
+  border: 1px solid #1f2937;
 }
 
 .hero-logo {
-  max-width: 260px;
-  width: 100%;
+  width: 220px;
+  max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 20px;
 }
-
-/* 以前の .phone-mock 系のスタイルは不要なら削除してOK */
 
 /* カード・グリッド */
 .card-grid {

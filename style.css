@@ -72,13 +72,13 @@ body {
 }
 
 .logo-mark {
-  height: 280px;      /* アイコンの高さ：ここで調整（例: 24〜32px） */
+  height: 200px;      /* アイコンの高さ：ここで調整（例: 24〜32px） */
   width: auto;
   display: block;
 }
 
 .logo-wordmark {
-  height: 60px;      /* 文字ロゴの高さ：ここで調整（例: 18〜24px） */
+  height: 2000px;      /* 文字ロゴの高さ：ここで調整（例: 18〜24px） */
   width: auto;
   display: block;
 }

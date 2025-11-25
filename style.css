@@ -72,14 +72,14 @@ body {
 }
 
 .logo-mark {
-  height: 40px;   /* マークを大きめに */
+  height: 400px;   /* マークを大きめに */
   width: auto;
   display: block;
   border-radius: 8px;
 }
 
 .logo-wordmark {
-  height: 28px;   /* テキストロゴも拡大 */
+  height: 400px;   /* テキストロゴも拡大 */
   width: auto;
   display: block;
 }

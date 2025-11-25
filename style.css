@@ -68,7 +68,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 }
 
 .logo-mark {

@@ -64,23 +64,16 @@ body {
   padding: 0px 0;
 }
 
-/* ロゴ（マーク+テキスト） */
+/* ロゴ（1枚画像） */
 .logo {
   display: flex;
   align-items: center;
-  gap: 0px;          /* ロゴ同士の距離。広ければここを増やす */
-  height: 80px;      /* ヘッダー内で見せたいロゴ全体の高さ */
-  overflow: hidden;  /* 箱からはみ出した上下はカット */
+  /* 必要なら上下の帯を制御したいときだけ height を付ける */
+  height: 80px;
 }
 
-.logo-mark {
-  height: 100px;      /* アイコン（四角ロゴ）の高さ */
-  width: auto;
-  display: block;
-}
-
-.logo-wordmark {
-  height: 140px;      /* 「Cellexion」テキストロゴの高さ */
+.logo-img {
+  height: 160px;     /* ← ロゴの大きさはここで調整（例: 28〜40px） */
   width: auto;
   display: block;
 }
@@ -299,17 +292,13 @@ body {
   }
 }
 
-/* スマホ表示時（幅 480px 以下）のロゴ縮小 */
 @media (max-width: 480px) {
   .logo {
-    gap: 4px;           /* すこし詰める */
+    /* スマホ時に上下をさらに詰めたいならここで padding / height 調整も可 */
+    gap: 4px;
   }
 
-  .logo-mark {
-    height: 28px;       /* スマホ用：アイコンを小さめに */
-  }
-
-  .logo-wordmark {
-    height: 18px;       /* スマホ用：テキストロゴも小さめに */
+  .logo-img {
+    height: 24px;   /* スマホ用のロゴ高さ。大きければここを下げる */
   }
 }

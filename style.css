@@ -55,34 +55,32 @@ body {
   background: rgba(245, 245, 247, 0.9);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(209, 213, 219, 0.7);
-  padding: 0;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
-  height: 48px;
+  padding: 0px 0;
 }
 
 /* ロゴ（マーク+テキスト） */
 .logo {
   display: flex;
   align-items: center;
-  gap: 6px;          /* ロゴ同士の距離 */
-  height: 28px;      /* 見せたい高さをここで決める */
-  overflow: hidden;  /* はみ出した上下はカット */
+  gap: 0px;          /* ロゴ同士の距離。広ければここを増やす */
+  height: 80px;      /* ヘッダー内で見せたいロゴ全体の高さ */
+  overflow: hidden;  /* 箱からはみ出した上下はカット */
 }
 
 .logo-mark {
-  height: 28px;      /* 箱の高さと合わせる */
+  height: 100px;      /* アイコン（四角ロゴ）の高さ */
   width: auto;
   display: block;
 }
 
 .logo-wordmark {
-  height: 20px;      /* 文字ロゴは少し小さめ */
+  height: 140px;      /* 「Cellexion」テキストロゴの高さ */
   width: auto;
   display: block;
 }
@@ -101,7 +99,7 @@ body {
 
 /* HERO */
 .hero {
-  padding: 48px 0 64px;
+  padding: 72px 0 64px;
   background: radial-gradient(circle at top left, #e5f1ff, #f5f5f7 55%);
 }
 

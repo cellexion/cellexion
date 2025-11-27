@@ -298,3 +298,18 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* スマホ表示時（幅 480px 以下）のロゴ縮小 */
+@media (max-width: 480px) {
+  .logo {
+    gap: 4px;           /* すこし詰める */
+  }
+
+  .logo-mark {
+    height: 28px;       /* スマホ用：アイコンを小さめに */
+  }
+
+  .logo-wordmark {
+    height: 18px;       /* スマホ用：テキストロゴも小さめに */
+  }
+}

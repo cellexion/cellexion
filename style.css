@@ -68,10 +68,12 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  /* 必要なら上下の帯を制御したいときだけ height を付ける */
+  height: 70px;
 }
 
 .logo-img {
-  height: 160px;      /* PC でのロゴ高さ。大きくしたければここを上げる */
+  height: 160px;     /* ← ロゴの大きさはここで調整（例: 28〜40px） */
   width: auto;
   display: block;
 }

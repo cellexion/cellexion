@@ -61,19 +61,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 0;
+  padding: 0px 0; /* 上下の帯を薄めに */
 }
 
 /* ロゴ（1枚画像） */
 .logo {
   display: flex;
   align-items: center;
-  /* 必要なら上下の帯を制御したいときだけ height を付ける */
-  height: 80px;
 }
 
 .logo-img {
-  height: 160px;     /* ← ロゴの大きさはここで調整（例: 28〜40px） */
+  height: 160px;      /* PC でのロゴ高さ。大きくしたければここを上げる */
   width: auto;
   display: block;
 }
@@ -292,13 +290,13 @@ body {
   }
 }
 
+/* スマホ表示時（幅 480px 以下）のロゴ縮小 */
 @media (max-width: 480px) {
-  .logo {
-    /* スマホ時に上下をさらに詰めたいならここで padding / height 調整も可 */
-    gap: 4px;
+  .logo-img {
+    height: 24px;    /* スマホ時は少し小さくしてはみ出しを防ぐ */
   }
 
-  .logo-img {
-    height: 80px;   /* スマホ用のロゴ高さ。大きければここを下げる */
+  .header-inner {
+    padding: 2px 0;
   }
 }

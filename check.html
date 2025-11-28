@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>画面チェックツール | Cellexion</title>
+  <meta name="description" content="ホコリや皮脂汚れ、ムラなどを確認しやすくするための画面チェックツールです。">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      background: #000000; /* 初期は黒 */
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+      text-align: center;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    .wrapper {
+      padding: 16px;
+    }
+    .title {
+      margin-bottom: 12px;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    .hint {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+    @media (max-width: 480px) {
+      .title {
+        font-size: 0.95rem;
+      }
+      .hint {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body onclick="toggleScreen()" data-mode="black">
+  <div class="wrapper">
+    <div class="title">
+      画面全体をタップすると<br>黒／白が切り替わります。
+    </div>
+    <div class="hint">
+      画面の明るさを最大にしてご利用ください。<br>
+      OLED など焼き付きが気になる場合は、長時間の表示はお控えください。
+    </div>
+  </div>
+
+  <script>
+    function toggleScreen() {
+      var body = document.body;
+      var isBlack = body.dataset.mode !== 'white'; // デフォルトは black 扱い
+
+      if (isBlack) {
+        body.dataset.mode = 'white';
+        body.style.backgroundColor = '#ffffff';
+        body.style.color = '#111827';
+      } else {
+        body.dataset.mode = 'black';
+        body.style.backgroundColor = '#000000';
+        body.style.color = '#ffffff';
+      }
+    }
+  </script>
+</body>
+</html>
